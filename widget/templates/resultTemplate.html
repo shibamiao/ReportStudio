@@ -1,0 +1,31 @@
+﻿<html>
+<head>
+<title>My Graphics</title>
+<link rel="stylesheet" href="../dojo/resources/dojo.css" />
+<link rel="stylesheet" href="../dijit/themes/claro/claro.css" />
+<link rel="stylesheet" href="../dojox/grid/resources/claroGrid.css" />
+<script type="text/javascript" src="../dojo/dojo.js" data-dojo-config="isDebug:1, async:1">
+	var dojoConfig = {
+		async: true,
+		parseOnLoad: true,
+		packages: [{
+			name: "myApp",
+			location: location.pathname.replace(/\/[^/]*$/, '')
+	}]};
+</script>
+<script src="./widget/sources/dataMap.js">	</script>
+<script type="text/javascript">
+${jsons}
+</script>
+</head>
+<body class="claro">
+${divs}
+<script>
+require([
+	"myApp/widget/sources/activator"
+	],function(activator){
+	activator.activate();		
+});
+</script>
+</body>
+</html>

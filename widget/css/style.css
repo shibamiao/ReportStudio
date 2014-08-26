@@ -1,0 +1,164 @@
+﻿
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+#mainMenu {
+	margin-top:1px;
+}
+
+#toolBar {
+	margin-top:1px;
+	border: 1px solid #b5bcc7;
+}
+
+#headerImg {
+	margin-left:10px;
+	margin-right:5px;
+	margin-bottom:-3px;
+}
+
+.appLayout {
+    height: 92%;
+	margin:-4px;
+}
+
+.centerContainer {
+	overflow:hidden;
+}
+
+.canvasContainer {
+	background-image:url(../images/center_back.png);
+	background-repeat:repeat-x,y;
+	padding:0;
+	width:100%;
+	height:100%;
+	z-index:2;
+	position:absolute;
+	-webkit-user-select:none;
+}
+
+.claro .dijitSplitContainer-dijitContentPane, 
+.claro .dijitBorderContainer-dijitContentPane{
+	padding:0;
+}
+
+.selectorContainer {
+	width:100%;
+	height:100%;
+	z-index:300;
+	position:absolute;
+	display:none;
+	-webkit-user-select:none;
+}
+
+.targetWidget {
+	-webkit-user-select:none;
+	position:absolute;
+}
+
+.selectorNode {
+	width:10px;
+	height:10px;
+	background-image:url(../images/roundSelector.png);
+	position:absolute;
+	margin:-12px;
+	padding:12px;
+	z-index:310;
+}
+
+.coverNode {
+	position:absolute;
+	cursor:move;
+}
+
+.targetWidget {
+	padding:0;
+	background:white;
+}
+
+.selectorLTNode, .selectorRBNode {
+	cursor:nw-resize;
+}
+.selectorRTNode, .selectorLBNode {
+	cursor:ne-resize;
+}
+
+.selectorFrame {
+	position:absolute;
+	overflow:hidden;
+	background: #d3e1ee;
+	border: 2px solid #6a94dc;
+	z-index:305;
+}
+
+.leftFrame {
+	width: 4px;
+	border-right: none;
+}
+.rightFrame {
+	width:4px;
+	border-left:none;
+}
+.topFrame {
+	height:4px;
+	border-bottom:none;
+}
+.bottomFrame {
+	height:4px;
+	border-top:none;
+}
+
+.dojoDndItem {
+	cursor:pointer;
+}
+
+.dojoDndAvatar {
+	width:100px;
+	height:80px;
+	text-align: center;
+}
+.dojoDndAvatarHeader {
+	background:#d3e1ee;
+}
+
+.editing {
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat;	
+	top:-40px;
+	position:absolute;
+	cursor:pointer;
+}
+
+.dataEditNode {
+	background-image:url(../images/data.png);
+	left:10px;
+}
+
+.dataDisplaySelectNode {
+	background-image:url(../images/search.png);
+	left:50px;
+}
+.eventEditNode {
+	background-image:url(../images/event.png);
+	left:90px;
+}
+
+.sourceWidget {
+	width:100px;
+	height:80px;
+	text-align:center;
+}
+
+.image {
+	margin-top:10px;
+	text-align:center;
+}
+
+.title {
+	text-align:center;
+}

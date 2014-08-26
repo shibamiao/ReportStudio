@@ -1,0 +1,95 @@
+﻿<html>
+<head>
+<title>My Graphics</title>
+<link rel="stylesheet" href="../dojo/resources/dojo.css" />
+<link rel="stylesheet" href="../dijit/themes/claro/claro.css" />
+<link rel="stylesheet" href="../dojox/grid/resources/claroGrid.css" />
+<script type="text/javascript" src="../dojo/dojo.js" data-dojo-config="isDebug:1, async:1">
+	var dojoConfig = {
+		async: true,
+		parseOnLoad: true,
+		packages: [{
+			name: "myApp",
+			location: location.pathname.replace(/\/[^/]*$/, '')
+	}]};
+</script>
+<script src="./widget/sources/dataMap.js">	</script>
+<script type="text/javascript">
+
+myProject_columnsChart_0={
+	"id":"widget_0",
+	"className":"myProject_columnsChart",
+	"style":{
+		"left":"29px",
+		"top":"18px",
+		"width":"400px",
+		"height":"303px"
+	},
+	"data":"ChartData2",
+	"eventListener":"",
+	"builder":"columnsChart"
+};
+
+myProject_pieFanChart_1={
+	"id":"widget_1",
+	"className":"myProject_pieFanChart",
+	"style":{
+		"left":"449px",
+		"top":"25px",
+		"width":"400px",
+		"height":"303px"
+	},
+	"data":"ChartData2",
+	"eventListener":"",
+	"builder":"pieFanChart"
+};
+
+myProject_lineChart_2={
+	"id":"widget_2",
+	"className":"myProject_lineChart",
+	"style":{
+		"left":"659px",
+		"top":"345px",
+		"width":"400px",
+		"height":"303px"
+	},
+	"data":"ChartData2",
+	"eventListener":"",
+	"builder":"lineChart"
+};
+
+myProject_dgrid_3={
+	"id":"widget_3",
+	"className":"myProject_dgrid",
+	"style":{
+		"left":"-2px",
+		"top":"342px",
+		"width":"680px",
+		"height":"240px"
+	},
+	"data":"ChartData2",
+	"eventListener":{"onRowClick":["widget_1"],"onColumnClick":["widget_0","widget_2"]},
+	"builder":"dgrid"
+};
+
+</script>
+</head>
+<body class="claro">
+
+<div id="widget_0" class="myProject_columnsChart" json-src="myProject_columnsChart_0"></div> 
+
+<div id="widget_1" class="myProject_pieFanChart" json-src="myProject_pieFanChart_1"></div> 
+
+<div id="widget_2" class="myProject_lineChart" json-src="myProject_lineChart_2"></div> 
+
+<div id="widget_3" class="myProject_dgrid" json-src="myProject_dgrid_3"></div> 
+
+<script>
+require([
+	"myApp/widget/sources/activator"
+	],function(activator){
+	activator.activate();		
+});
+</script>
+</body>
+</html>

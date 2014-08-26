@@ -1,0 +1,20 @@
+﻿<html>
+	<head>
+		<title>My Graphics</title>
+		<link rel="stylesheet" href="../dojo/resources/dojo.css" />
+		<script type="text/javascript">
+			${jsons}
+		</script>
+	</head>
+	<body class="claro">
+		${divs}
+		<script>
+			require([
+				"myApp/widget/sources/activator"
+				],function(activator){
+				activator.activate();		
+			});
+		</script>
+	</body>
+</html>
+

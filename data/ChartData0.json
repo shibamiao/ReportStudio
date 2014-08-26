@@ -1,0 +1,22 @@
+﻿{
+	"header":{
+		"id":"chartData_0",
+		"version":"1.0",
+		"contentType":"struct",
+		"targetNode":"null",
+		"dimension":"1",
+		"fields":[{
+			"id":"column_0",
+			"label":"",
+			"isKey":"true"
+		}]
+	},
+	"body":{
+		"data":[
+			[0.53,0.51],
+			[0.84,0.79],
+			[0.68,0.95],
+			[0.77,0.66]		
+		]
+	}
+}
